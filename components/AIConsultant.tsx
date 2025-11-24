@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Terminal, Loader2, Sparkles, Command } from 'lucide-react';
+import { Send, Terminal, Loader2, Command } from 'lucide-react';
 import { sendMessageToConsultant, ChatMessage } from '../services/geminiService';
 
 export const AIConsultant: React.FC = () => {
