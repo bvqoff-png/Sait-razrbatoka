@@ -1,7 +1,6 @@
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 
-const apiKey = process.env.API_KEY || '';
-const ai = new GoogleGenAI({ apiKey });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export interface ChatMessage {
   role: 'user' | 'model';
@@ -13,7 +12,7 @@ export const sendMessageToConsultant = async (
   newMessage: string
 ): Promise<string> => {
   try {
-    if (!apiKey) {
+    if (!process.env.API_KEY) {
       return "Извините, соединение с сервером (API Key) отсутствует. Пожалуйста, свяжитесь с администратором.";
     }
 
