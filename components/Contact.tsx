@@ -31,7 +31,10 @@ export const Contact: React.FC = () => {
             </div>
 
             <Button className="w-full text-lg">Отправить Запрос</Button>
-            <p className="text-center text-xs text-slate-500 mt-4">Мы обычно отвечаем в течение 2 часов в рабочие дни.</p>
+            <p className="text-center text-xs text-slate-500 mt-4">
+              Мы обычно отвечаем в течение 2 часов в рабочие дни. <br/>
+              Или напишите нам в <a href="https://t.me/bakdauletnm" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-white underline transition-colors">Telegram</a> для мгновенного ответа.
+            </p>
           </form>
         </div>
       </div>
